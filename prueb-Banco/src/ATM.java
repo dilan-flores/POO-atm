@@ -16,7 +16,7 @@ public class ATM {
 
     //MÉTODOS
 
-    ATM datos = new ATM();
+    //ATM datos = new ATM();
     Scanner entrada = new Scanner(System.in);
 
     int menu_principal(){

@@ -4,24 +4,24 @@ public class Main {
         ATM datos = new ATM();
         ATM menu = new ATM();
 
-        int op = menu.menu_principal();
+        int op;
 
         boolean salir = false;
 
         while(!salir){
-
-        }
-        switch(op){
-            case 1:{
-                datos.deposito(datos);
-            }
-            break;
-            case 2:{
-                datos.retiro(datos);
-            }
-            break;
-            case 3:{
-                salir = true;
+            switch(op = menu.menu_principal()){
+                case 1:{
+                    datos.deposito(datos);
+                }
+                break;
+                case 2:{
+                    datos.retiro(datos);
+                }
+                break;
+                case 3:{
+                    salir = true;
+                }
+                op = menu.menu_principal();
             }
         }
     }
